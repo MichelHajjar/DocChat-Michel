@@ -6,7 +6,7 @@ function LoginForm({ onLoggedIn }) {
   const [error, setError] = useState(''); 
   
   async function handleSubmit(e) { 
-    e.preventDefault();                       // stop the page reloading 
+    e.preventDefault();                       // stop the page reloading.
     const res = await fetch('/api/login', { 
       method: 'POST', 
       headers: { 'Content-Type': 'application/json' }, 
